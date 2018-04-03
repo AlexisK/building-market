@@ -15,6 +15,6 @@ For now this will contain some manuals:
 * Merge to develop should only happen using pull request
 
 Git branches naming examples:
-`feature/optimized-builds` - new features
-`bugfix/login-form` - fixes to existing features
-`refactor/css-structure` - updated implementation but not functionality
+* `feature/optimized-builds` - new features
+* `bugfix/login-form` - fixes to existing features
+* `refactor/css-structure` - updated implementation but not functionality
