@@ -4,13 +4,16 @@
   "description": "",
   "private": true,
   "scripts": {
-    "build": "webpack",
-    "serve": "webpack --watch",
-    "start": "npm run serve"
+    "build:dev": "webpack --config ./webpack.config.js --env.name dev",
+    "build:prod": "webpack --config ./webpack.config.js --env.name prod",
+    "serve:dev": "webpack --config ./webpack.config.js --env.name dev --watch",
+    "serve:prod": "webpack --config ./webpack.config.js --env.name prod --watch",
+    "start": "npm run serve:dev"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "copy-webpack-plugin": "^4.5.1",
     "webpack": "^4.4.1",
     "webpack-cli": "^2.0.13"
   }
